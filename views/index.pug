@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= oded
-  p Welcome to #{oded}
+    h1= title
+    p Welcome to #{title2}
+
+    p#demo
+    script.
+        document.getElementById("demo").innerHTML = title2.id;
+
+
+
