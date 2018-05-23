@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1550,
+    "created_at": "2018-05-19T07:20:23.553Z",
+    "updated_at": "2018-05-19T07:53:54.099Z",
+    "title": "Potential Platform Issues",
+    "resolved": true,
+    "upcoming": false,
+    "status_dev": "green",
+    "status_prod": "green",
+    "href": "https://status.heroku.com/api/v3/issues/1550",
+    "full_url": "https://status.heroku.com/incidents/1550",
+    "updates": [
+      {
+        "id": 5096,
+        "created_at": "2018-05-19T07:53:54.095Z",
+        "updated_at": "2018-05-19T07:53:58.026Z",
+        "incident_id": 1550,
+        "update_type": "resolved",
+        "contents": "A small percentage or API requests were affected between 06:11am UTC and 07:23am. Systems have been confirmed as recovered and servicing all API requests correctly.",
+        "title": "Potential Platform Issues",
+        "status_dev": "green",
+        "status_prod": "green"
+      },
+      {
+        "id": 5095,
+        "created_at": "2018-05-19T07:31:01.454Z",
+        "updated_at": "2018-05-19T07:31:03.872Z",
+        "incident_id": 1550,
+        "update_type": "monitoring",
+        "contents": "Engineers discovered an issue with builds and API starting at 6:05am UTC. This has been resolved and they are currently monitoring both systems.",
+        "title": "Potential Platform Issues",
+        "status_dev": "yellow",
+        "status_prod": "green"
+      },
+      {
+        "id": 5094,
+        "created_at": "2018-05-19T07:20:23.553Z",
+        "updated_at": "2018-05-19T07:20:23.553Z",
+        "incident_id": 1550,
+        "update_type": "investigating",
+        "contents": "Engineers are investigating potential issues with the Heroku platform.\r\n",
+        "title": "Potential Platform Issues",
+        "status_dev": "yellow",
+        "status_prod": "green"
+      }
+    ]
+  },
+  {
+    "id": 1549,
+    "created_at": "2018-05-14T15:10:23.000Z",
+    "updated_at": "2018-05-14T23:03:41.390Z",
+    "title": "Deployment issues with release phase apps",
+    "resolved": true,
+    "upcoming": false,
+    "status_dev": "green",
+    "status_prod": "green",
+    "href": "https://status.heroku.com/api/v3/issues/1549",
+    "full_url": "https://status.heroku.com/incidents/1549",
+    "updates": [
+      {
+        "id": 5093,
+        "created_at": "2018-05-14T15:27:24.000Z",
+        "updated_at": "2018-05-14T23:03:47.018Z",
+        "incident_id": 1549,
+        "update_type": "resolved",
+        "contents": "The ability to deploy release phase apps has been restored.",
+        "title": "Deployment issues with release phase apps",
+        "status_dev": "green",
+        "status_prod": "green"
+      },
+      {
+        "id": 5092,
+        "created_at": "2018-05-14T15:10:23.000Z",
+        "updated_at": "2018-05-14T23:16:04.066Z",
+        "incident_id": 1549,
+        "update_type": "retroactive",
+        "contents": "From 2018-05-14 22:10:23 UTC to 2018-05-14 22:27:24 UTC we experienced an issue that prevented all release phase apps from being deployed.",
+        "title": "Deployment issues with release phase apps",
+        "status_dev": "yellow",
+        "status_prod": "green"
+      }
+    ]
+  },
+  {
+    "id": 1548,
+    "created_at": "2018-05-10T02:26:04.509Z",
+    "updated_at": "2018-05-10T02:45:29.548Z",
+    "title": "Increased errors in starting dynos",
+    "resolved": true,
+    "upcoming": false,
+    "status_dev": "green",
+    "status_prod": "green",
+    "href": "https://status.heroku.com/api/v3/issues/1548",
+    "full_url": "https://status.heroku.com/incidents/1548",
+    "updates": [
+      {
+        "id": 5089,
+        "created_at": "2018-05-10T02:45:29.543Z",
+        "updated_at": "2018-05-10T02:45:30.576Z",
+        "incident_id": 1548,
+        "update_type": "resolved",
+        "contents": "The problem is now resolved.",
+        "title": "Increased errors in starting dynos",
+        "status_dev": "green",
+        "status_prod": "green"
+      },
+      {
+        "id": 5088,
+        "created_at": "2018-05-10T02:27:11.250Z",
+        "updated_at": "2018-05-10T02:27:11.997Z",
+        "incident_id": 1548,
+        "update_type": "monitoring",
+        "contents": "From around 2018-05-10 01:27 UTC, error rates in dyno starts are back within the normal ranges. Engineers are monitoring the situation.",
+        "title": "Increased errors in starting dynos",
+        "status_dev": "green",
+        "status_prod": "yellow"
+      },
+      {
+        "id": 5087,
+        "created_at": "2018-05-10T02:26:04.509Z",
+        "updated_at": "2018-05-10T02:26:08.143Z",
+        "incident_id": 1548,
+        "update_type": "issue",
+        "contents": "From around 2018-05-10 00:42 UTC, we are seeing elevated errors in starting dynos for Private Spaces apps in Virginia.\r\n",
+        "title": "Increased errors in starting dynos",
+        "status_dev": "green",
+        "status_prod": "yellow"
+      }
+    ]
+  }
+]
