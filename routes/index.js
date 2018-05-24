@@ -1,21 +1,22 @@
 var express = require('express');
 var router = express.Router();
-var request = require('request');
+var rp = require('request-promise');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
 
-    request("https://status.heroku.com/api/v3/issues?since=2012-04-24&limit=10", function (error, response, body) {
-        var c=JSON.parse(body);
-        var length = Object.keys(c[0]).length;
-        console. log (c[0]);
-        res.render('index', {
-            title: 'Heroku status as of today',
-            c: c,
-            length : length
-        });
+    rp("https://status.heroku.com/api/v3/issues?since=2012-04-24&limit=10")
+        .then(function (body) {
+            var c = JSON.parse(body);
+            res.render('index', {
+                title: 'Heroku status as of today',
+                c: c,
+            });
 
-    });
+        })
+        .catch(function (error) {
+            console.log(error)
+        });
 });
 
 module.exports = router;

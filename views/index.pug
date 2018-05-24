@@ -2,42 +2,14 @@ extends layout
 
 block content
     h1=title
-    - var n = 0;
     table
         tr
         each val, index in c[0]
             th= index
-        tr
-        each val, index in c[1]
-            td= val
-        tr
-        each val, index in c[2]
-            td= val
-        tr
-        each val, index in c[3]
-            td= val
-        tr
-        each val, index in c[4]
-            td= val
-        tr
-        each val, index in c[5]
-            td= val
-        tr
-        each val, index in c[6]
-            td= val
-        tr
-        each val, index in c[7]
-            td= val
-        tr
-        each val, index in c[8]
-            td= val
-        tr
-        each val, index in c[9]
-            td= val
-
-
-
-
-
+        -var n = 0
+        while n<10
+            tr
+            each val in c[n++]
+                td=JSON.stringify(val)
 
 
