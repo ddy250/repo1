@@ -9,7 +9,13 @@ block content
         -var n = 0
         while n<10
             tr
-            each val in c[n++]
-                td=JSON.stringify(val)
+            each val, index in c[n++]
+                if index==updates
+                    td=JSON.stringify(val)
+                else
+                    td=val
+
+
+
 
 
