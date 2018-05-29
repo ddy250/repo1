@@ -1,19 +1,48 @@
 extends layout
 
 block content
-    h1=title
-    table
-        tr
-        each val, index in c[0]
-            th= index
-        -var n = 0
-        while n<10
-            tr
-            each val, index in c[n++]
-                if index==updates
-                    td=JSON.stringify(val)
-                else
-                    td=val
+    .blackheader
+        h2 Header
+    .blueheader
+        h1 Header
+    .topnav
+        a(href='#')=title
+        a(href='#') link2
+        a(href='#').dropdown link3
+            .dropdown-content
+                  ul
+                    .dropdown-list
+                        li 1
+                        li 2
+                        li 3
+    .row
+        .main
+            .orange
+                h2 Local pollen alert
+
+            table
+                tr
+                each val, index in c[0]
+                    th= index
+                -var n = 0
+                while n<10
+                    tr
+                    each val, index in c[n++]
+                        if index==updates
+                            td=JSON.stringify(val)
+                        else
+                            td=val
+        .side
+           .box
+                p Weather text here
+           .box
+                p Some other weather text
+                br
+                p bla
+                br
+                p bla bla
+                br
+                p bla bla bla
 
 
 

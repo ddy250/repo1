@@ -1,31 +1,135 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+/*eliminates the small margins in the browser*/
+body {
+    margin: 0;
+}
+.blackheader {
+    background-color: black;
+    padding: 5px;
+    text-align: left;
+    color: white;
+    font-size:50% ;
+}
+/* Style the header */
+.blueheader {
+    background-color: dodgerblue;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    text-decoration: underline;
+    cursor: pointer |
+}
+
+.dropdown-list {
+    float: bottom;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Main column */
+.main {
+    flex: 70%;
+    overflow-x: auto;
+    background-color: silver;
+    padding: 20px;
+}
+/*.main > div {
+    background-color: white
+    margin: 10px;
+}                             */
+
+/* Sidebar/right column */
+.side {
+    flex: 30%;
+    overflox-x:auto;
+    background-color:silver;
+    padding: 20px;
+}
+
+
+.orange{
+    cursor: pointer;
+    background-color: orange;
+    width: 100%;
+}
+.orange:hover{
+    background-color: darkorange;
+
+}
+
+.box {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border: 10px solid silver;
+}
+
+
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #999;
+}
+td{
+    background-color: white;
+}
+th{
+    background-color: #eef6fb;
+    font-weight: normal;
+}
+td:hover{
+    cursor: pointer;
+
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
+border-collapse: collapse;
 }
 
-th, td {
-  text-align: left;
-  padding: 8px;
-}
 
-tr:nth-child(even) {
-  background-color: #f2f2f2
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-
-div{
-  overflow-x:auto;
-}
