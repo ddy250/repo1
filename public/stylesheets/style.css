@@ -6,13 +6,24 @@
 body {
     margin: 0;
 }
+
+/* Style the first header*/
 .blackheader {
+    display: flex;
     background-color: black;
-    padding: 5px;
-    text-align: left;
     color: white;
-    font-size:50% ;
+    line-height: 0px;
 }
+.blackheader a {
+    cursor: pointer;
+    padding: 1px 1px;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;
+    max-width: 60px;
+
+}
+
 /* Style the header */
 .blueheader {
     background-color: dodgerblue;
