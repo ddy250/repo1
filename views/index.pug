@@ -2,15 +2,18 @@ extends layout
 
 block content
     .blackheader
-        a
+        .blueblackheader
             p The
-            br
-            p weather
-            br
-            p channel
+            p Weather
+            p Channel
 
     .blueheader
-        h1 Header
+        .blueheadersection1
+            p Header
+        .blueheadersection2
+            p Another header
+        .blueheadersection1
+            p A third header
     .topnav
         a(href='#')=title
         a(href='#') link2
@@ -24,7 +27,7 @@ block content
     .row
         .main
             .orange
-                h2 Local pollen alert
+                h2 LOCAL POLLEN ALERT
 
             table
                 tr
